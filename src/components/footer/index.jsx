@@ -1,8 +1,6 @@
-import React from 'react';
-
 import {
     FooterWrapper,
-} from './index.style.jsx';
+} from './index.style'
 
 const Footer = () => {
     return (
@@ -11,3 +9,5 @@ const Footer = () => {
         </FooterWrapper>
     );
 };
+
+export default Footer;

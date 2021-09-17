@@ -1,13 +1,32 @@
-import React from 'react';
+import Link from 'next/link'
+import HamburgerIcon from '../../../public/images/index'
 
 import {
     NavWrapper,
-} from './index.style.jsx';
+    Links,
+    NavLink,
+    PopOut
+} from './index.style'
 
-const Footer = () => {
+const Nav = () => {
     return (
         <NavWrapper>
-            
+            <Links>
+                <NavLink>
+                    <Link href='/'>Home</Link>
+                </NavLink>
+                <NavLink>
+                    <Link href='/about'>About</Link>
+                </NavLink>
+                <NavLink>
+                    <Link href='/blog'>Blog</Link>
+                </NavLink>
+            </Links>
+            <PopOut>
+                <HamburgerIcon />
+            </PopOut>
         </NavWrapper>
     );
 };
+
+export default Nav;

@@ -1,13 +1,13 @@
-import React from 'react';
-
 import {
     ModalWrapper,
-} from './index.style.jsx';
+} from './index.style'
 
-const Footer = () => {
+const Modal = () => {
     return (
         <ModalWrapper>
             
         </ModalWrapper>
     );
 };
+
+export default Modal;
